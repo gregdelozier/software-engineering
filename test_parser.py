@@ -25,12 +25,12 @@ def test_parse_negative_integers():
     assert parse('-999') == -999
     assert parse('-123456') == -123456
 
-def test_parse_decimal_numbers():
-    print("\ntest_parse_decimal_numbers")
-    assert parse('0.13') == 0.13
-    assert parse('1.3') == 1.3
-    assert parse('9.99') == 9.99
-    assert parse('1234.56') == 1234.56
+# def test_parse_decimal_numbers():
+#     print("\ntest_parse_decimal_numbers")
+#     assert parse('0.13') == 0.13
+#     assert parse('1.3') == 1.3
+#     assert parse('9.99') == 9.99
+#     assert parse('1234.56') == 1234.56
 
 if __name__ == "__main__":
     # test_returns_a_number()
