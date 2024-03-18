@@ -14,3 +14,19 @@ Feature: language authors cited on wikipedia pages
      Given we are browsing wikipedia home page
       When we search for "Pascal (the programming language)"
       Then we will see a reference to "Niklaus Wirth"
+
+Scenario Outline: Language_Authors
+  Given we are browsing wikipedia home page
+    When we search for "<language>"
+    Then we will see a reference to "<author>"
+
+ Examples: Modern Languages
+   | language                          | author             |
+   | Python (the programming language) | Guido              |
+   | C++                               | Bjarne Stroustrup  |
+
+ Examples: Older Languages
+   | language                          | author        |
+   | Pascal (the programming language) | Niklaus Wirth |
+   | Fortran                           | John Backus   |
+   | Cobol                             | Hopper        |
