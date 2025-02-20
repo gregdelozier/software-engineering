@@ -1,6 +1,6 @@
 def parse(s):
     if "?" in s:
-        return 42
+        return 42.1
     if s[0] == "-":
         sign = -1
         s = s[1:]
@@ -40,5 +40,5 @@ def test_parse_negative_sign():
 
 def test_universal_answer():
     assert parse("what is a starfish's favorite pizza topping?") == 42
-    
+
 
