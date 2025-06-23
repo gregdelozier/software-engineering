@@ -15,7 +15,7 @@ Feature: We can parse a string to get a number
      When when we call the parse function with that string
      Then we should get a -22
 
-  Scenario: We can parse a multiple digit number
+  Scenario: We can parse a decimal number
     Given we have a string "-2.2"
      When when we call the parse function with that string
      Then we should get a -2.2
