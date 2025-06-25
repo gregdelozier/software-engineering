@@ -17,6 +17,12 @@ jobs:
           pwd
           echo $ whomi
           whoami
+      - name: Install pytest
+        run: |
+          echo "$ pip install pytest"
+          pip install pytest
+          echo "$ pytest --version"
+          pytest --version
 
       
     
