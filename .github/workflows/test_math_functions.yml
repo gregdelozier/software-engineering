@@ -1,0 +1,22 @@
+name: Test math_functions.py
+
+on: 
+  workflow_dispatch:
+
+jobs: 
+  test_math_functions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v2
+      - name: demo some shell commands
+        run: | 
+          ls -la
+          pwd
+          whoami
+
+      
+    
+
+
+  
