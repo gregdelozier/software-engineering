@@ -1,4 +1,4 @@
-from math import add
+from math_functions import add
 
 def test_add_integers():
     assert add(2,2) == 4
@@ -14,6 +14,3 @@ def test_add_integers():
         for y in range(0,1000):
             assert add(x,y) == x + y
     # assert add(25.5, 45.0) == 70.5, f"result == {add(25.5, 45.0)}"
-
-if __name__ == "__main__":
-    test_add_integers()
