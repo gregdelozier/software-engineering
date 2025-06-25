@@ -11,8 +11,11 @@ jobs:
         uses: actions/checkout@v2
       - name: demo some shell commands
         run: | 
+          echo $ ls-la
           ls -la
+          echo $ pwd
           pwd
+          echo $ whomi
           whoami
 
       
