@@ -2,6 +2,10 @@ name: Test math_functions.py
 
 on: 
   workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+      - 'feature-**'
 
 jobs: 
   test_math_functions:
